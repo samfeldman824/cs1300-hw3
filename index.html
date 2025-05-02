@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chinatown on Thayer - Usability Case Study</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 >Chinatown on Thayer Redesign Case Study</h1>
+  </header>
+  <main>
+    <h2 id="background">Background</h2>
+    <p>Chinatown is one of my favorite restaurants on campus and great place to go for a late night meal. While their food is amazing,
+      there website has many flaws that could be improved upon. This project aims to investigate and address ways to improve the website
+      in making it more user-friendly and efficient.
+    </p>
+
+    <h2>Identifying Usability Problems</h2>
+
+    <h3 id="efficiency">Efficiency (Rating: 5/10)</h3>
+    <ul>
+      <li><strong>Redundant elements:</strong> The “We Now Serve Sushi” banner and repeated “Order Online!” links add extra click points without adding value.</li>
+      <li><strong>Cluttered header:</strong> Logo, app badges, social icons, and banners compete for attention, pushing important content down.</li>
+      <li><strong>Hidden menu options:</strong> On smaller viewports, submenu items may be cut off or require extra scrolling.</li>
+    </ul>
+
+    <h3 id="learnability">Learnability (Rating: 7/10)</h3>
+    <ul>
+      <li><strong>Unclear ordering flow:</strong> Users must click to discover whether “Order Online” links to a third-party platform or internal cart.</li>
+      <li><strong>No visual affordance:</strong> Menu items lack hover effects or buttons to show they are interactive.</li>
+    </ul>
+
+    <h3 id="memorability">Memorability (Rating: 6/10)</h3>
+    <ul>
+      <li><strong>Inconsistent navigation:</strong> Primary links mix text and image buttons, making it hard to remember where to click on return visits.</li>
+      <li><strong>No persistent cues:</strong> After navigating away, CTAs like ordering and hours aren’t pinned, so users must scroll back up each time.</li>
+    </ul>
+
+    <h2 id="accessibility">Accessibility Issues</h2>
+    <ul>
+      <li><strong>Low contrast:</strong> Light gray text on white fails WCAG AA standards for body copy.</li>
+      <li><strong>Missing alt text:</strong> Decorative images (logo, banners, app badges) lack meaningful alt attributes.</li>
+      <li><strong>Poor keyboard navigation:</strong> Absence of semantic landmarks and tabindex ordering hinders keyboard-only users.</li>
+      <li><strong>Viewport meta missing:</strong> Without <code>&lt;meta name="viewport"&gt;</code>, mobile users get a shrunk, non-responsive view.</li>
+    </ul>
+
+    <h2 id="mockups">Visual Redesign Mockups</h2>
+    <div class="mockup-gallery">
+      <div class="mockup-item">
+        <img src="images/desktop_mock.png" alt="Mockup 1: Large Computer (~3840×2160px)" />
+        <p>Mockup 1: Large Computer (~3840×2160px)</p>
+      </div>
+      <div class="mockup-item">
+        <img src="images/tablet_mock.png" alt="Mockup 2: Tablet (~768×1024px)" />
+        <p>Mockup 2: Tablet (~768×1024px)</p>
+      </div>
+      <div class="mockup-item">
+        <img src="images/phone_mock.png" alt="Mockup 3: Phone (~375×667px)" />
+        <p>Mockup 3: Phone (~375×667px)</p>
+      </div>
+    </div>
+    <h2 id="style-guide">Style Guide</h2>
+    <p>This style guide outlines our key visual elements—logos, buttons, color palette, and typography—to ensure consistent branding across all pages.</p>
+    <div class="mockup-gallery">
+      <div class="mockup-item">
+        <img src="images/style_guide.jpg" alt="Style guide: logos, buttons, color palette, text styles" loading="lazy" />
+      </div>
+    </div>
+
+    <h2 id="improvements">Improvements Overview</h2>
+
+    <div class="improvement-section">
+      <h3>Readability Improvements</h3>
+      <ul>
+        <li>By increasing line-height to 1.75 and constraining paragraph width to 60ch, the text is now easier to scan and reduces eye strain, particularly on wide screens.</li>
+        <li>Contrast has been enhanced with white body text on a black, ensuring WCAG-compliant (AAA) levels of readability.
+      </ul>
+    </div>
+
+    <div class="improvement-section">
+      <h3>Usability Enhancements</h3>
+      <ul>
+        <li>The mobile-first navigation toggle improves task efficiency on small devices, allowing users to open and close the menu with one tap.</li>
+        <li>Hover and focus states have been added to interactive elements (buttons and menu items), providing clear affordances and feedback.</li>
+      </ul>
+    </div>
+
+    <div class="improvement-section">
+      <h3>Memorability Gains</h3>
+      <ul>
+        <li>Active navigation links are underlined and colored green, offering a persistent cue to help repeat visitors locate sections quickly.</li>
+        <li>Consistent placement of key CTAs (e.g. “Order Online”) in the header and hero reinforces muscle memory across sessions.</li>
+      </ul>
+    </div>
+    <div class="improvement-section">
+  <h3>Accessibility Enhancements</h3>
+  <ul>
+    <li>Inserted a skip-to-main link for keyboard users.</li>
+    <li>Wrapped regions in landmarks/ARIA roles (<code>role="main"</code>, <code>aria-labelledby</code>).</li>
+    <li>Added a “Back to top” link in the footer with focus styles.</li>
+  </ul>
+</div>
+
+    <!-- Conclusion Section -->
+    <h2 id="conclusion">Conclusion</h2>
+    <ul>
+      <li>The redesign addresses key usability issues, improving efficiency, learnability, memorability, and accessibility.</li>
+      <li>Visual consistency and clear navigation help users complete tasks faster and with less confusion.</li>
+      <li>Accessibility enhancements ensure the site is usable for a wider audience, including keyboard and screen reader users.</li>
+      <li>Mockups and a style guide provide a strong foundation for future development and brand consistency.</li>
+      <li>For the live website, visit: <a href="https://samfeldman824.github.io/chinatown-redesign/" target="_blank" rel="noopener">Chinatown on Thayer Website</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    &copy; 2025 Chinatown on Thayer — Usability Case Study
+  </footer>
+</body>
+</html>
